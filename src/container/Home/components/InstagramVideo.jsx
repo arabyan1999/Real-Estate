@@ -27,5 +27,7 @@ function InstagramVideo() {
 export default InstagramVideo
 
 const StyledIphoneIcon = styled(Iphone)`
-
+    @media (max-width: 920px) {
+        margin-bottom: 40px;
+    }
 `

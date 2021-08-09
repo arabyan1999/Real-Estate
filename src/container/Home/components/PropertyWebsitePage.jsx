@@ -43,5 +43,6 @@ const StyledImgDiv = styled(Devices)`
 
 const StyledRight = styled.div`
     width: 100%;
-    margin-left: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
 `

@@ -14,7 +14,7 @@ function Videos() {
                 <StyledSubtitle>Quantity: 163 • Size: 1.39 GB</StyledSubtitle>
             </div>
             <StyledFlexDiv>
-                <div>
+                <StyledVideoDiv>
                     <video width="430" height="230" controls style={{marginBottom:"25px"}}>
                         <source src="https://www.youtube.com/watch?v=naZAknwNgkY" type="video/mp4" />
                     </video>
@@ -25,8 +25,8 @@ function Videos() {
                     <div style={{width:"100%"}}>
                         <YellowButton>DOWNLOAD VIDEO</YellowButton>
                     </div>
-                </div>
-                <div>
+                </StyledVideoDiv>
+                <StyledVideoDiv>
                     <video width="430" height="230" controls style={{marginBottom:"25px"}}>
                         <source src="https://www.youtube.com/watch?v=naZAknwNgkY" type="video/mp4" />
                     </video>
@@ -37,7 +37,7 @@ function Videos() {
                     <div style={{width:"100%"}}>
                         <YellowButton>DOWNLOAD VIDEO</YellowButton>
                     </div>
-                </div>
+                </StyledVideoDiv>
                 <div>
                     <video width="430" height="230" controls style={{marginBottom:"25px"}}>
                         <source src="https://www.youtube.com/watch?v=naZAknwNgkY" type="video/mp4" />
@@ -70,4 +70,10 @@ const StyledFlexDiv = styled(Flex)`
 const VideoSize = styled(StyledSubtitle)`
     color:rgba(0, 0, 0, 0.4);
     margin-bottom: 9px;
+`
+
+const StyledVideoDiv = styled.div`
+    @media (max-width: 920px) {
+        margin-bottom: 20px;
+    }
 `
